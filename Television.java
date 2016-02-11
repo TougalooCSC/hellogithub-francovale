@@ -11,8 +11,18 @@ public class Television{
   private int channel;
   // the TV's current loudness (0 means no sound)
   private int volume;
-  
-  
+
+//This constructor allows the client to provide a manufacturer
+// and screen size for the television instance being created.
+  public Television(String brand, int size)
+  {
+    MANUFACTURER = brand;
+    SCREEN_SIZE = size;
+    powerOn = false;
+    volume = 20;
+    channel = 2;
+    
+  }
 
 
 }
